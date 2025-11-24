@@ -89,6 +89,7 @@ const PaperCalculator = () => {
                     <label className="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1">Roll Width (in)</label>
                     <input 
                       type="number" 
+                      inputMode="numeric"
                       value={width}
                       onChange={(e) => setWidth(e.target.value === '' ? '' : Number(e.target.value))}
                       className="w-full p-2.5 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all font-medium"
@@ -98,6 +99,7 @@ const PaperCalculator = () => {
                     <label className="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1">Draw Length (in)</label>
                     <input 
                       type="number" 
+                      inputMode="numeric"
                       value={length}
                       onChange={(e) => setLength(e.target.value === '' ? '' : Number(e.target.value))}
                       className="w-full p-2.5 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all font-medium"
@@ -110,6 +112,7 @@ const PaperCalculator = () => {
                   <label className="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1">GSM (Grams/m²)</label>
                   <input 
                     type="number" 
+                    inputMode="numeric"
                     value={gsm}
                     onChange={(e) => setGsm(e.target.value === '' ? '' : Number(e.target.value))}
                     className="w-full p-2.5 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all font-medium"
@@ -121,6 +124,7 @@ const PaperCalculator = () => {
                   <label className="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-1">Sheets (Default Ream: 500)</label>
                   <input 
                     type="number" 
+                    inputMode="numeric"
                     value={draws}
                     onChange={(e) => setDraws(e.target.value === '' ? '' : Number(e.target.value))}
                     className="w-full p-2.5 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all font-medium"
@@ -134,6 +138,7 @@ const PaperCalculator = () => {
                     <span className="absolute left-3 top-2.5 text-slate-400 font-bold">₱</span>
                     <input 
                       type="number" 
+                      inputMode="numeric"
                       value={costPerKg}
                       onChange={(e) => setCostPerKg(e.target.value === '' ? '' : Number(e.target.value))}
                       className="w-full p-2.5 pl-7 bg-slate-50 border border-slate-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all font-medium"
