@@ -8,7 +8,7 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'mask-icon.svg'],
+      includeAssets: ['favicon.ico', 'toilet-roll.png', 'apple-touch-icon.png', 'mask-icon.svg'],
       manifest: {
         name: 'Roll to Sheet Calculator',
         short_name: 'SheetCalc',
@@ -21,22 +21,22 @@ export default defineConfig({
         start_url: './',
         icons: [
           {
-            src: 'icon.svg',
+            src: 'toilet-roll.png',
             sizes: 'any',
-            type: 'image/svg+xml'
+            type: 'image/png'
           },
           {
-            src: 'pwa-192x192.png',
+            src: 'toilet-roll.png',
             sizes: '192x192',
             type: 'image/png'
           },
           {
-            src: 'pwa-512x512.png',
+            src: 'toilet-roll.png',
             sizes: '512x512',
             type: 'image/png'
           },
           {
-            src: 'pwa-512x512.png',
+            src: 'toilet-roll.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'any maskable'
